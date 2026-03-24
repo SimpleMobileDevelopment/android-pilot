@@ -1,0 +1,11 @@
+route: Landing screen basics
+
+steps:
+  - step: Verify landing screen loads
+    instructions:
+      - verify: A 'Let's Start' button is visible on screen
+
+  - step: Navigate to sign up
+    instructions:
+      - action: Tap the 'Let's Start' button
+      - verify: A sign-up or login screen appears with input fields

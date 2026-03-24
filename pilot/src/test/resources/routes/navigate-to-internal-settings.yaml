@@ -1,0 +1,26 @@
+route: Navigate to internal settings
+
+steps:
+  - step: Login
+    instructions:
+      - verify: The landing screen is visible with a 'Let's Start' button
+      - action: Tap the 'Let's Start' button
+      - verify: A phone number input field is visible
+      - action: Tap the phone number input field
+      - action: Type '14155551212' into the phone number field
+      - action: Tap the 'Continue' button
+
+  - step: Wait for workout screen
+    timeout: 30
+    instructions:
+      - verify: The main workout screen is visible
+
+  - step: Open profile settings
+    instructions:
+      - action: Tap the profile or settings button
+      - verify: A settings menu or sheet is visible
+
+  - step: Open internal settings
+    instructions:
+      - action: Tap 'Internal Settings'
+      - verify: The internal settings screen is visible

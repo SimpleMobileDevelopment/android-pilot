@@ -1,0 +1,16 @@
+{
+  "appPackageId": "com.example.app.debug",
+  "testRunner": "com.example.app.TestInstrumentationRunner",
+  "testClass": "com.example.app.e2e.YamlRouteTest",
+  "yamlDir": "app/src/androidTest/assets/routes",
+  "testFile": "app/src/androidTest/kotlin/com/example/app/e2e/YamlRouteTest.kt",
+  "testFileTemplate": "app/src/androidTest/kotlin/com/example/app/e2e/YamlRouteTest.kt",
+  "debugApk": "app/build/outputs/apk/debug/app-debug.apk",
+  "testApk": "app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk",
+  "buildCommand": ["./gradlew", "app:assembleDebug", "app:assembleDebugAndroidTest"],
+  "github": {
+    "owner": "",
+    "repo": "",
+    "workflowFile": "route-tests.yml"
+  }
+}

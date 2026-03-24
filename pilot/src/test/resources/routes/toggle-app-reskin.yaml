@@ -1,0 +1,16 @@
+route: Toggle App Reskin flag
+
+steps:
+  - step: Find the App Reskin toggle
+    instructions:
+      - verify: The internal settings screen is visible
+      - action: Scroll down to find 'Show App Reskin'
+      - verify: A 'Show App Reskin' toggle or switch is visible
+
+  - step: Toggle the flag
+    instructions:
+      - remember:
+          key: initial_state
+          description: Whether the 'Show App Reskin' toggle is currently on or off
+      - action: Tap the 'Show App Reskin' toggle to change its state
+      - verify: The 'Show App Reskin' toggle state has changed from {initial_state}

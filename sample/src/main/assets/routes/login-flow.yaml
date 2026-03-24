@@ -1,0 +1,19 @@
+route: Login flow
+
+steps:
+  - step: Verify login screen loads
+    instructions:
+      - verify: A login screen is visible with username and password fields and a Log In button
+
+  - step: Enter credentials and log in
+    instructions:
+      - action: Tap the username input field
+      - action: Type 'testuser' into the username field
+      - action: Tap the password input field
+      - action: Type 'password123' into the password field
+      - action: Tap the 'Log In' button
+
+  - step: Verify navigation to list
+    timeout: 10
+    instructions:
+      - verify: A list of items is visible on screen

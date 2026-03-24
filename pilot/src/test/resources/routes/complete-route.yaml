@@ -1,0 +1,15 @@
+route: Complete test route
+
+steps:
+  - step: First step
+    instructions:
+      - action: Tap the login button
+      - verify: Login screen is visible
+
+  - step: Second step
+    instructions:
+      - action: Type 'user@example.com' into the email field
+      - remember:
+          key: email
+          description: The email address entered in the field
+      - verify: The email field shows {email}

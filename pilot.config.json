@@ -1,0 +1,16 @@
+{
+  "appPackageId": "co.pilot.sample",
+  "testRunner": "androidx.test.runner.AndroidJUnitRunner",
+  "testClass": "co.pilot.sample.PilotYamlRouteTest",
+  "yamlDir": "sample/src/main/assets/routes",
+  "testFile": "sample/src/androidTest/kotlin/co/pilot/sample/PilotYamlRouteTest.kt",
+  "testFileTemplate": "sample/src/androidTest/kotlin/co/pilot/sample/PilotYamlRouteTest.kt",
+  "debugApk": "sample/build/outputs/apk/debug/sample-debug.apk",
+  "testApk": "sample/build/outputs/apk/androidTest/debug/sample-debug-androidTest.apk",
+  "buildCommand": ["./gradlew", ":sample:assembleDebug", ":sample:assembleDebugAndroidTest"],
+  "github": {
+    "owner": "",
+    "repo": "",
+    "workflowFile": "route-tests.yml"
+  }
+}

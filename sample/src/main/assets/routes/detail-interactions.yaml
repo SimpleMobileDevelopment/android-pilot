@@ -1,0 +1,23 @@
+route: Detail screen interactions
+
+steps:
+  - step: Navigate to detail
+    instructions:
+      - action: Tap the username input field
+      - action: Type 'user' into the username field
+      - action: Tap the password input field
+      - action: Type 'pass' into the password field
+      - action: Tap the 'Log In' button
+      - verify: A list of items is visible
+      - action: Tap the first item in the list
+
+  - step: Toggle favorite
+    instructions:
+      - verify: A detail screen is visible with a favorite button
+      - action: Tap the 'Favorite' button
+      - verify: The favorite button shows a toggled or active state
+
+  - step: Navigate back
+    instructions:
+      - action: Tap the back button
+      - verify: The item list screen is visible again

@@ -1,0 +1,23 @@
+route: Browse items and view detail
+
+steps:
+  - step: Log in first
+    instructions:
+      - action: Tap the username input field
+      - action: Type 'testuser' into the username field
+      - action: Tap the password input field
+      - action: Type 'password123' into the password field
+      - action: Tap the 'Log In' button
+
+  - step: Verify list and tap an item
+    instructions:
+      - verify: A list of items is visible
+      - remember:
+          key: selectedItem
+          description: The title of the first visible item in the list
+      - action: Tap the first visible item in the list
+
+  - step: Verify detail screen
+    timeout: 10
+    instructions:
+      - verify: A detail screen is visible showing the item title and description
